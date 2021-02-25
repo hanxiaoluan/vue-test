@@ -2,7 +2,7 @@ import qs from 'qs'
 import { isArray, isString } from './is'
 export const getPageQuery = () => {
     const url = new URL(location.href)
-    // console.log(qs.parse(url.search.split('?')[1]))
+
     return qs.parse(url.search.split('?')[1])
 }
 

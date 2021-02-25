@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1614223922961" clover="3.2.0">
-  <project timestamp="1614223922961" name="All files">
-    <metrics statements="34" coveredstatements="32" conditionals="2" coveredconditionals="2" methods="16" coveredmethods="15" elements="52" coveredelements="49" complexity="0" loc="34" ncloc="34" packages="2" files="7" classes="7"/>
+<coverage generated="1614238974825" clover="3.2.0">
+  <project timestamp="1614238974825" name="All files">
+    <metrics statements="57" coveredstatements="43" conditionals="23" coveredconditionals="9" methods="20" coveredmethods="17" elements="100" coveredelements="69" complexity="0" loc="57" ncloc="57" packages="2" files="8" classes="8"/>
     <package name="components">
       <metrics statements="23" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="8"/>
       <file name="BasicForm.vue" path="/Users/apple/myGithub/vue-test/src/components/BasicForm.vue">
@@ -47,20 +47,46 @@
       </file>
     </package>
     <package name="utils">
-      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <metrics statements="34" coveredstatements="22" conditionals="23" coveredconditionals="9" methods="11" coveredmethods="9"/>
       <file name="is.ts" path="/Users/apple/myGithub/vue-test/src/utils/is.ts">
         <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+      </file>
+      <file name="utils.ts" path="/Users/apple/myGithub/vue-test/src/utils/utils.ts">
+        <metrics statements="23" coveredstatements="11" conditionals="21" coveredconditionals="7" methods="4" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="3" falsecount="2"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
       </file>
     </package>
   </project>

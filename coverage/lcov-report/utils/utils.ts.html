@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/BasicForm.vue</title>
+    <title>Code coverage report for utils/utils.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -18,34 +18,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">components</a> BasicForm.vue</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">utils</a> utils.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">47.83% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>11/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>7/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>2/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">47.83% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>11/23</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -94,23 +94,9 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -121,55 +107,72 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-	&lt;form @submit.prevent="submit"&gt;
-		&lt;input type="email" v-model="form.email" /&gt;
-		&lt;textarea name="" id="" cols="30" rows="10" v-model="form.description"&gt;&lt;/textarea&gt;
-		&lt;select v-model="form.city"&gt;
-			&lt;option value="new-york"&gt;New York&lt;/option&gt;
-			&lt;option value="moscow"&gt;Moscow&lt;/option&gt;
-		&lt;/select&gt;
-		&lt;input type="checkbox" v-model="form.subscribe" /&gt;
-		&lt;input type="radio" value="weekly" v-model="form.interval" /&gt;
-		&lt;input type="radio" value="monthly" v-model="form.interval" /&gt;
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import qs from 'qs'
+import { isArray, isString } from './is'
+export const getPageQuery = () =&gt; {
+    const url = new URL(location.href)
 &nbsp;
-		&lt;button @click="submit"&gt;Submit&lt;/button&gt;
-	&lt;/form&gt;
-&lt;/template&gt;
+    return qs.parse(url.search.split('?')[1])
+}
 &nbsp;
-&lt;script lang="ts"&gt;
-import { defineComponent } from 'vue'
-export default defineComponent({
-    data() {
-        return {
-            form: {
-                email: '',
-                description: '',
-                city: '',
-                subscribe: false,
-                interval: ''
-            }
-        }
-    },
-    emits: ['submit'],
-    methods: {
-        submit() {
-            this.$emit('submit', this.form)
-        }
+export function openWindow(
+    url: string,
+    opt?: {target?: '_self'|'_blank';noopener?: boolean;noreferrer?: boolean}
+) {
+    const { target = <span class="branch-0 cbranch-no" title="branch not covered" >'_blank', n</span>oopener = true, noreferrer = true } = opt || <span class="branch-1 cbranch-no" title="branch not covered" >{}</span>
+    const feature: string[] = []
+&nbsp;
+    noopener &amp;&amp; feature.push('noopener=yes')
+    noreferrer &amp;&amp; feature.push('noreferrer=yes')
+    window.open(url, target, feature.join(','))
+}
+&nbsp;
+export const removePageQuery = (<span class="fstat-no" title="function not covered" >query: string|string[]) =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >    if (!isString(query) &amp;&amp; !isArray(query)) {</span>
+<span class="cstat-no" title="statement not covered" >        throw n</span>ew Error('暂不支持此格式')
     }
-})
-&lt;/script&gt;
+&nbsp;
+    const searchParams: URLSearchParams = <span class="cstat-no" title="statement not covered" >new U</span>RLSearchParams(window.location.search.substring(1))
+<span class="cstat-no" title="statement not covered" >    if (isString(query)) {</span>
+<span class="cstat-no" title="statement not covered" >        searchParams.</span>has(query) &amp;&amp; searchParams.delete(query)
+<span class="cstat-no" title="statement not covered" >        location.</span>search = searchParams.toString()
+<span class="cstat-no" title="statement not covered" >        return t</span>rue
+    }
+<span class="cstat-no" title="statement not covered" >    if (isArray(query)) {</span>
+<span class="cstat-no" title="statement not covered" >        query.</span>forEach(<span class="fstat-no" title="function not covered" >item </span>=&gt; {
+<span class="cstat-no" title="statement not covered" >            searchParams.</span>has(item) &amp;&amp; searchParams.delete(item)
+        })
+<span class="cstat-no" title="statement not covered" >        location.</span>search = searchParams.toString()
+<span class="cstat-no" title="statement not covered" >        return</span>
+    }
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
